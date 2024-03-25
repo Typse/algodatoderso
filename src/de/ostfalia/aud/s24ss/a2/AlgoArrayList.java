@@ -58,7 +58,7 @@ public class AlgoArrayList<Employee> implements Iterable<Employee> {
 
     public void mergeSort(Comparator<Employee> comparator) {
         if (size > 1) {
-            Employee[] aux = new Object[size];
+            Employee[] aux = (Employee[]) new Object[size];
             mergeSortRec((Employee[]) array, aux, 0, size - 1, comparator);
         }
     }
@@ -128,6 +128,10 @@ class KeyComparator implements Comparator<Employee> {
     @Override
     public int compare(Employee e1, Employee e2) {
         return Integer.compare(e1.getKey(), e2.getKey());
+    }
+
+    public int compare(Employee e1, int key) {
+        return Integer.compare(e1.getKey(), key);
     }
 }
 
