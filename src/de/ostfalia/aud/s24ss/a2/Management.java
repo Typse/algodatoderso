@@ -3,9 +3,6 @@ package de.ostfalia.aud.s24ss.a2;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.security.Key;
-import java.util.Comparator;
-import java.util.Iterator;
 
 import de.ostfalia.aud.s24ss.a1.Employee;
 import de.ostfalia.aud.s24ss.base.*;
